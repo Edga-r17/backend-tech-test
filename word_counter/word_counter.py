@@ -7,3 +7,19 @@ introducido las innovaciones digitales.
 """
 
 palabra_buscada = "logística"
+
+
+def convertir_a_minusculas(texto):
+    resultado = ""
+    for caracter in texto:
+        if 'A' <= caracter <= 'Z':
+            resultado += chr(ord(caracter) + 32)
+        else:
+            resultado += caracter
+    return resultado
+
+parrafo = convertir_a_minusculas(parrafo)
+palabra_buscada = convertir_a_minusculas(palabra_buscada)
+
+print(parrafo)
+print(palabra_buscada)
