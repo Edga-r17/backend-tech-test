@@ -5,13 +5,14 @@ Este proyecto contiene la solución a una prueba técnica para evaluar conocimie
 ---
 
 ## 📁 Estructura del proyecto
-
+```bash
 .
 ├── sorting_filter/
 │   └── sorting_filter.py            # Ejercicio 2: ordenar elementos por criterios sin usar sort()
 ├── word_counter/
 │   └── word_counter.py              # Ejercicio 1: contar ocurrencias de una palabra sin usar funciones nativas
 └── README.md              
+```
 
 ## 📝   Ejercicio 1 - Contador de ocurrencias de una palabra
 
