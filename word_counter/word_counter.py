@@ -8,6 +8,14 @@ introducido las innovaciones digitales.
 
 palabra_buscada = "logística"
 
+parrafo_prueba = """
+En el vasto universo de la programación, Python brilla con luz propia. 
+Python es versátil, fácil de aprender y poderoso. Muchos programadores 
+aman Python porque les permite construir soluciones elegantes en poco tiempo.
+"""
+palabra_buscada_prueba = "python"
+
+
 
 def convertir_a_minusculas(texto):
     resultado = ""
@@ -51,7 +59,15 @@ parrafo = convertir_a_minusculas(parrafo)
 palabra_buscada = convertir_a_minusculas(palabra_buscada)
 resultado = contar_ocurrencias(parrafo, palabra_buscada)
 
+parrafo_prueba = convertir_a_minusculas(parrafo_prueba)
+palabra_buscada_prueba = convertir_a_minusculas(palabra_buscada_prueba)
+resultado_prueba = contar_ocurrencias(parrafo_prueba, palabra_buscada_prueba)
+
 
 print(parrafo)
 print(palabra_buscada)
-print(f"'{palabra_buscada}' aparece {resultado} veces.")
+print(f"'La palabra: {palabra_buscada}' aparece {resultado} veces.")
+
+print(parrafo_prueba)
+print(palabra_buscada_prueba)
+print(f"'La palabra: {palabra_buscada_prueba}' aparece {resultado_prueba} veces.")
