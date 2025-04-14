@@ -83,13 +83,16 @@ def main():
     ]
 
     criterios = [('weight', '=', 3)]
-    
+    criteria2 = [
+        ('width', '>=', 2),
+        ('length', '<=', 20),
+    ]
 
     cumplen = []
     no_cumplen = []
 
     for item in entry:
-        if cumple_criterios(item, criterios):
+        if cumple_criterios(item, criteria2):
             cumplen.append(item)
         else:
             no_cumplen.append(item)
